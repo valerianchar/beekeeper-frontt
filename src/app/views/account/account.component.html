@@ -1,1 +1,12 @@
-<p>account works!</p>
+<h4 class="account__title">Account</h4>
+<mat-divider class="account__divider" />
+
+<app-input [formControl]="form.controls.firstname"> Prénom </app-input>
+<app-input [formControl]="form.controls.lastname"> Nom </app-input>
+<app-input type="email" [formControl]="form.controls.email"> Email </app-input>
+<app-input type="password" [formControl]="form.controls.password">
+  Mot de passe
+</app-input>
+<app-input type="password" [formControl]="form.controls.password_confirmation">
+  Confirmer le mot de passe
+</app-input>
